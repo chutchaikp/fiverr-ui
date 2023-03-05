@@ -1,0 +1,15 @@
+.app {
+  // height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  span {
+    line-height: 1.75;
+  }
+}
