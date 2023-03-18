@@ -7,8 +7,13 @@ import Footer from './components/Footer.jsx'
 
 // pages
 import Home from './pages/home/Home.jsx'
-// import Products from './pages/products/Products.jsx'
-// import Product from './pages/product/Product.jsx'
+import Gigs from './pages/gigs/Gigs.jsx'
+import Gig from './pages/gig/Gig.jsx'
+import MyGigs from './pages/mygigs/MyGigs.jsx'
+import Orders from './pages/orders/Orders.jsx'
+import Messages from './pages/messages/Messages.jsx'
+import Message from './pages/message/Message.jsx'
+
 import Sandbox from './pages/sandbox/Sandbox.jsx'
 import Add from './pages/add/Add.jsx'
 
@@ -29,22 +34,31 @@ const router = createBrowserRouter([
       path: '/',
       element: <Home />
     }, {
-      path: '/products',
-      element: <></>
+      path: '/gigs',
+      element: <Gigs />
     }, {
-      path: '/products/:categoryId',
-      element: <></>
+      path: '/gig/:id',
+      element: <Gig></Gig>
     }, {
-      path: '/product/:id',
-      element: <></>
+      path: '/mygigs',
+      element: <MyGigs />
+    }, {
+      path: '/orders',
+      element: <Orders />
+    }, {
+      path: '/messages',
+      element: <Messages />
+    }, {
+      path: '/message/:id',
+      element: <Message />
+    }, {
+      path: '/add',
+      element: <Add />
     }
     ]
   }, {
     path: '/sandbox',
     element: <Sandbox />
-  }, {
-    path: '/add',
-    element: <Add />
   }
 ])
 

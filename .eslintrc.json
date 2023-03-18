@@ -6,7 +6,7 @@
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
-    ],
+],
     "overrides": [
     ],
     "parserOptions": {
@@ -17,6 +17,7 @@
         "react"
     ],
     "rules": {
-        "no-unused-vars": "warn"
+        "no-unused-vars": "warn",
+        "react/prop-types": "off"
     }
 }
